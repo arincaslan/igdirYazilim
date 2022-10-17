@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla One&family=Montserrat:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.textContainer h2{
+    margin-bottom: 30px;
+    font-size:40px;
+    color: #2e2f33;
+}
+
+.textContainer p{
+    color:#808080;
+    text-align: center;
+    width: 900px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 70px;
+    border: 3px solid #f93340;
+    box-shadow: 5px 5px #f93340;
+}
+
+.card p{
+    width: 300px;
+    margin: 10px 0px;
+    color:#808080;
+    font-style: italic;
+    line-height: 25px;
+}
+
+.card h5{
+    font-size: 20px;
+    margin: 10px 0px;
+    color: #2e2f33;
+    font-weight: 600;
+    font-family: Montserrat,sans-serif;
+}
+
+.card img{
+    width: 100px;
+    margin: 10px 0px;
+}
+
+.cardContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1140px;
+    margin: 50px;
+}
+
+.globalContainer,.midContainer, .textContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.textContainer{
+    margin-bottom: 50px;
+}
+
+
+.globalContainer{
+    padding: 100px;
+}
+
+@media screen and (max-width:850px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    
+    .card p{
+        font-size: 20px;
+        width: 300px;
+        margin: 10px 0px;
+        color:#808080;
+        font-style: italic;
+        line-height: 25px;
+    }
+    
+    .card h5{
+        font-size: 40px;
+    }
+    
+    .card img{
+        width: 200px;
+    }
+    
+    
+}

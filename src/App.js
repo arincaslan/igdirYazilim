@@ -1,13 +1,22 @@
-import logo from './logo.svg';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import MainPage from './Components/MainPage/Mainpage';
+import Services from "./Components/Services/Services";
+import TeamPage from "./Components/TeamPage/Teampage";
 
 function App() {
   return (
-    <div>
-      <MainPage/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />}></Route>
+        <Route path="/services" element={<Services/>}></Route>
+        <Route path="/teamPage" element={<TeamPage/>}></Route> 
+      </Routes>
+    </BrowserRouter>
   );
 }
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
 
 export default App;

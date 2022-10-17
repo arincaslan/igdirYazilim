@@ -7,10 +7,11 @@ import Button from '@mui/material/Button';
 import classes from './Navbar.module.css';
 import { ListItemText,ListItem,ListItemButton  } from '@mui/material';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Outlet, Link } from "react-router-dom";
 
-export default function Navbar() {
 
-    const NavItems = ['Anasayfa', 'Hizmetlerimiz', 'Ekibimiz', 'Hakkımızda', 'İletişim']
+const Navbar = () => {
+
 
 
   return (
@@ -34,16 +35,48 @@ export default function Navbar() {
             }}
           >
             LOGO
-          </Typography>
-          {NavItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          </Typography> 
+          <ListItem  disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+              <ListItemText>
+                <Link className={classes.link} to="/">Anasayfa</Link>
+              </ListItemText>
             </ListItemButton>
           </ListItem>
-        ))}     
+          <ListItem  disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }}>
+              <ListItemText>
+               <Link className={classes.link} to="/services">Hizmetlerimiz</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem  disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }}>
+              <ListItemText>
+                <Link className={classes.link} to="/teamPage">Ekibimiz</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem  disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }}>
+              <ListItemText>
+                <Link className={classes.link} to="/services">Hakkımızda</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>  
+          <ListItem  disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }}>
+              <ListItemText>
+                <Link className={classes.link} to="/services">İletişim</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+    
         </Toolbar>
       </AppBar>
     </Box>
   );
 }
+
+
+export default Navbar;
