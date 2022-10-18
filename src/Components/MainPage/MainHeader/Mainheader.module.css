@@ -1,90 +1,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@300&display=swap');
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.container, .car,.text-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.page1Container{
     height: 100vh;
 }
 
-.car{
-    width: 60%;
-    
-}
-
-.img img{
-    width: 80%;
-    margin: 85px 0px 0px 115px;
-}
-
-.box{
-    z-index: -1;
-    position: absolute;
-    width: 30%;
-    height: 60%;
-    background-color: #f93340;
-    margin: 80px 0px 0px 80px;
-}
-
-.text{
-    width:80%;
-    margin-left: -200px;
-}
-
-.text p {
+.page1ContentsContainer{
     width: 100%;
-    font-size: 18px;
-    font-family: 'Open Sans',sans-serif;
-    margin-top: 10px;
-    line-height: 1.6;
+    padding: 80px;
 }
 
-.border{
-    width: 80px;
-    height: 10px;
-    background-color: #f93340;
+.Page1textContainer{
+    width: 30%;
+}
+.imgContainer{
+    margin-right: 80px;
+    position: relative;
+    width: 50%;
+}
+
+.imgContainer img{
+    width: 100%;
+    min-width: 200px;
+    max-width: 800px;
+}
+
+.imgContainer::before{
     position: absolute;
-    top: -10px;
-    left: -200px;
+    content: "";
+    width: 90%;
+    height: 125%;
+    background-color: 	#f93340;
+    z-index: -1;
+    top: -13%;
+    left: -30px;
+    min-width: 200px;
+    max-width: 800px;    
 }
 
-.textContainer{
-    top: 40px;
+
+.Page1textContainer h1{
+    font-size: 55px;
+    color:	#f93340;
+    position: relative;
+    left:-3px;
+}
+
+.Page1textContainer h4{
+    font-size: 20px;
+    color: 	#f93340;
+    letter-spacing: 5px;
+    font-weight: 500;
+    margin-top: -8px;
+    margin-bottom: 30px;
+}
+
+.Page1textContainer p {
+    color: #004780;
+    line-height: 25px;
+}
+
+.Page1textContainer span{
     position: relative;
 }
 
-.text h1{
-    color: #f93340;
-    font-size: 60px;
-    font-weight: 400;
+.Page1textContainer span::before{
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: -10px;
+    width: 100%;
+    height: 9px;
+    background-color: 	#f93340;
+
 }
 
-.text h3{
-    letter-spacing: 2px;
-    font-size: 35px;
-    font-weight: 400;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-}
-
-.button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 10px ;
-    background-color: #000000;
+.buttonContainer{
+    padding: 20px 50px;
+    background-color: 	#f93340;
+    display: inline-block;
+    margin-top: 30px;
     color: white;
-    width: 50%;
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: 400px;
-    
+    cursor: pointer;
 }
+
+@media only screen and (max-width:1300px){
+    
+.Page1textContainer h1{
+    font-size: 40px;
+}
+
+.Page1textContainer h4{
+    font-size: 20px;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+.Page1textContainer p {
+    font-size: 15px;
+}
+
+.Page1textContainer span::before{
+    left: 2px;
+    height: 6px;
+
+}
+
+.buttonContainer{
+    padding: 12px 20px;
+}
+
+}
+
+@media only screen and (max-width:900px){
+    
+    .Page1textContainer h1{
+        font-size: 30px;
+    }
+    
+    .Page1textContainer h4{
+        font-size: 15px;
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+    
+    .Page1textContainer p {
+        font-size: 15px;
+    }
+    
+    .Page1textContainer span::before{
+        left: 2px;
+        height: 4px;
+    
+    }
+    
+    .buttonContainer{
+        padding: 10px 15px;
+    }
+    
+    }
+
+    @media only screen and (max-width:680px){
+    
+        .page1ContentsContainer{
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .Page1textContainer{
+            width: 100%;
+            margin-top: 100px;
+        }
+        .menuContainer a{
+            display: none
+        }
+
+        .menuContainer a:nth-child(5){
+            display: block!important;
+        }
+
+    }

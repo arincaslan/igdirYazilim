@@ -7,30 +7,20 @@ import Container from "@mui/material/Container";
 
 const MainHeader = () => {
   return (
-    <div className={classes.container}>
-      <div>
-        <div className={classes.box}></div>
-        <div className={classes.car}>
-          <div className={classes.img}>
-            <img src={headİmage}></img>
-          </div>
+    <div className={classes.page1Container}>
+    <div className={classes.page1ContentsContainer}>
+        <div className={classes.imgContainer}>
+            <img src={headİmage} alt="a"></img>
         </div>
-      </div>
-
-    <div className={classes.textContainer}>
-        <div className={classes.border}></div>
-        <div className={classes.text}>
-          <h1>En Kaliteli Yazılım</h1>
-          <h3>HİZMETİ</h3>
-          <p>
-            A regular service schedule can help keep your car running at it’s
-            best. A regular service schedule can help keep your car running at
-            it’s best.
-          </p>
-          <div className={classes.button}>read more</div>
+        <div className={classes.Page1textContainer}>
+            <h1><span>Best</span> Car</h1>
+            <h4>SERVİCES</h4>
+            <p>A regular service schedule can help keep your car running at it’s best. A regular service schedule can help keep your car running at it’s best.</p>
+            <div className={classes.buttonContainer}>read more</div>
         </div>
-      </div>
     </div>
+</div>
+  
   );
 };
 

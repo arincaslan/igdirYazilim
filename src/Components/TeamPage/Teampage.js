@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import classes from "./Teampage.module.css";
-import Navbar from '../Navbar/Navbar';
 
 
 
@@ -10,11 +9,8 @@ const TeamPage = () => {
 
     return(
        <div>
-        <Navbar></Navbar>
 
-
-
-        <div className={classes.globalContainer}>
+        <div id='teamDirect' className={classes.globalContainer}>
         <div className={classes.midContainer}>
             <div className={classes.textContainer}>
                 <h2> Ekibimiz </h2>

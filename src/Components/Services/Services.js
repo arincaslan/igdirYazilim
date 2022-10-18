@@ -8,7 +8,7 @@ const Services = () => {
 
 
     return(
-    <div className={classes.globalContainer}>
+    <div id='servicesDirect' className={classes.globalContainer}>
         <div className={classes.midContainer}>
             <div className={classes.textContainer}>
                 <h2> Hizmetlerimiz </h2>
@@ -24,7 +24,7 @@ const Services = () => {
                 fill="none" 
                 stroke-linecap="round" 
                 stroke-linejoin="round" 
-                color='#f93340'>
+                color='white'>
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M19.5 7a8.998 8.998 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4"></path>
                 <path d="M11.5 3a16.989 16.989 0 0 0 -1.826 4"></path>
@@ -49,7 +49,7 @@ const Services = () => {
                 fill="none" 
                 stroke-linecap="round" 
                 stroke-linejoin="round"
-                color='#f93340'>
+                color='white'>
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M11 3h10v8h-3l-4 2v-2h-3z"></path>
                     <path d="M15 16v4a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1h2"></path>
@@ -68,7 +68,7 @@ const Services = () => {
                 fill="none" 
                 stroke-linecap="round" 
                 stroke-linejoin="round"
-                color='#f93340'>
+                color='white'>
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                     <path d="M7 8h-3a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-3"></path>
                     <path d="M14 16h-4v-8h4"></path>

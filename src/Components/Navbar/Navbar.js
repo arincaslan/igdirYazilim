@@ -35,32 +35,33 @@ const Navbar = () => {
             }}
           >
             LOGO
-          </Typography> 
-          <ListItem  disablePadding>
+          </Typography>
+        <div style={{display : 'flex', alignItems: 'center', float:'right'}}> 
+          <ListItem  >
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText>
-                <Link className={classes.link} to="/">Anasayfa</Link>
+                <Link  className={classes.link} to="/">Anasayfa</Link>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem  >
+            <ListItemButton disableRipple='true' sx={{ textAlign: 'center' }}>
+              <ListItemText>
+               <a style={{padding: '23px 50px' , textDecoration: 'none', color:'white'}} href='#servicesDirect'>Hizmetlerimiz</a>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem  >
+            <ListItemButton sx={{ textAlign: 'center' }}>
+              <ListItemText>
+              <a style={{padding: '23px 50px' , textDecoration: 'none', color:'white'}} href='#aboutDirect'>Hakkımızda</a>
               </ListItemText>
             </ListItemButton>
           </ListItem>
           <ListItem  disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText>
-               <Link className={classes.link} to="/services">Hizmetlerimiz</Link>
-              </ListItemText>
-            </ListItemButton>
-          </ListItem>
-          <ListItem  disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText>
-                <Link className={classes.link} to="/teamPage">Ekibimiz</Link>
-              </ListItemText>
-            </ListItemButton>
-          </ListItem>
-          <ListItem  disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText>
-                <Link className={classes.link} to="/services">Hakkımızda</Link>
+              <a style={{padding: '23px 50px' , textDecoration: 'none', color:'white'}} href='#teamDirect'>Ekibimiz</a>
               </ListItemText>
             </ListItemButton>
           </ListItem>  
@@ -71,7 +72,7 @@ const Navbar = () => {
               </ListItemText>
             </ListItemButton>
           </ListItem>
-    
+          </div>
         </Toolbar>
       </AppBar>
     </Box>

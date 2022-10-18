@@ -4,6 +4,8 @@ import MainHeader from './MainHeader/MainHeader';
 import { Container } from '@mui/system';
 import Navbar from '../Navbar/Navbar';
 import Services from '../Services/Services';
+import TeamPage from '../TeamPage/Teampage';
+import About from '../About/About';
 
 const MainPage = () => {
 
@@ -15,6 +17,8 @@ const MainPage = () => {
             <MainHeader/>
         </div>
         <Services/>
+        <About/>
+        <TeamPage/>
     </div>
     
     );
