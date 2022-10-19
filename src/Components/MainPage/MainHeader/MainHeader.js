@@ -9,9 +9,6 @@ const MainHeader = () => {
   return (
     <div className={classes.page1Container}>
     <div className={classes.page1ContentsContainer}>
-        <div className={classes.imgContainer}>
-            <img src={headİmage} alt="a"></img>
-        </div>
         <div className={classes.Page1textContainer}>
             <h1><span>Best</span> Car</h1>
             <h4>SERVİCES</h4>

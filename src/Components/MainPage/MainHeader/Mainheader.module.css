@@ -3,11 +3,16 @@
 
 .page1Container{
     height: 100vh;
+    background-image: url('../../../images/background.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
 }
 
 .page1ContentsContainer{
     width: 100%;
     padding: 80px;
+    display: flex;
 }
 
 .Page1textContainer{
