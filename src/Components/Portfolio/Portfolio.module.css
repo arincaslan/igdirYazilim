@@ -1,0 +1,40 @@
+.cardsContainer{
+    display: flex;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cardAreHere{
+    display: flex;
+    flex-direction: row;
+}
+.Card{
+    padding: 5%;
+    margin: 2%;
+    box-shadow: 20px solid black!important;
+}
+
+
+.textContainer h2{
+    margin-bottom: 30px;
+    font-size:40px;
+    color: #2e2f33;
+}
+
+.textContainer p{
+    color:#808080;
+    text-align: center;
+    width: 900px;
+    margin-bottom: 2%;
+}
+
+.textContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    
+}

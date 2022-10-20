@@ -68,7 +68,7 @@ const Navbar = () => {
           <ListItem  disablePadding>
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText>
-                <Link className={classes.link} to="/services">İletişim</Link>
+              <a style={{padding: '23px 50px' , textDecoration: 'none', color:'white'}} href='#portfolyo'>Portfolyo</a>
               </ListItemText>
             </ListItemButton>
           </ListItem>

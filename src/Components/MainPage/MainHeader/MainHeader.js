@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import classes from "./Mainheader.module.css";
-import headİmage from "../../../images/head-2.jpg";
 import Container from "@mui/material/Container";
 
 
