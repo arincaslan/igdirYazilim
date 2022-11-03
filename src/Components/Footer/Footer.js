@@ -10,7 +10,6 @@ const Footer = () => {
             <div className={classes.rightContainer}>
                     <div className={classes.iconContainer}></div>
             </div>
-            <div className={classes.devider}></div>
             <div className={classes.leftContainer}>
                 <div className={classes.textContainer}>
                     <h5> Footer Başlığı </h5>    

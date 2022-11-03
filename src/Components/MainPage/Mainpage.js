@@ -23,6 +23,7 @@ const MainPage = () => {
         <TeamPage/>
         <Portfolio/>
         <Footer/>
+
     </div>
     
     );

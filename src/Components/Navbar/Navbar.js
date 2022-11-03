@@ -8,6 +8,7 @@ import classes from './Navbar.module.css';
 import { ListItemText,ListItem,ListItemButton  } from '@mui/material';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Outlet, Link } from "react-router-dom";
+import Contact from '../Contact/Contact';
 
 
 const Navbar = () => {
@@ -69,6 +70,13 @@ const Navbar = () => {
             <ListItemButton sx={{ textAlign: 'center' }}>
               <ListItemText>
               <a style={{padding: '23px 50px' , textDecoration: 'none', color:'white'}} href='#portfolyo'>Portfolyo</a>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+          <ListItem  disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }}>
+              <ListItemText>
+              <Link style={{padding: '23px 50px' , textDecoration: 'none', color:'white'}} to='/Contact'> İletişim</Link>
               </ListItemText>
             </ListItemButton>
           </ListItem>
